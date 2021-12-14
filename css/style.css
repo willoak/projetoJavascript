@@ -1,3 +1,8 @@
+:root {
+  --cor-texto-padrao: #222;
+  --bg-menu: #fb5;
+  --bg-site: #faf6ed;
+}
 body,
 h1,
 h2,
@@ -8,8 +13,52 @@ dl,
 ul,
 p {
   margin: 0;
-  padding: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
 }
 img {
   display: block;
+  max-width: 100%;
+}
+body {
+  color: var(--cor-texto-padrao);
+  background: var(--bg-site);
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg-menu);
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu li a {
+  display: block;
+  color: var(--cor-texto-padrao);
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-right: 10px;
+  letter-spacing: 0.1em;
+  padding: 10px;
+}
+.grid-section {
+  grid-column: 2/ 4;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 20px;
+  margin-bottom: 4rem;
 }
