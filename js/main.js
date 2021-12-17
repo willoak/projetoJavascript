@@ -68,4 +68,10 @@
 
 //transversing
 const lista = document.querySelector(".animais-lista");
-console.log(lista.parentNode);
+console.log(lista.parentElement); // retorna o pai
+console.log(lista.previousElementSibling); // retorna o elemento anterior
+
+//duplciar menu
+const menu = document.querySelector(".menu");
+const novoMenu = menu.cloneNode(true);
+document.querySelector(".copyright").appendChild(novoMenu);

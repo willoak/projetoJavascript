@@ -168,12 +168,12 @@ body {
   margin-right: 10px;
   background: var(--bg-menu);
 }
-.copy {
+.copyright {
   grid-column: 3/5;
   background-color: var(--bg-menu);
   margin-bottom: 2rem;
 }
-.copy {
+.copyright {
   padding: 20px;
   font-family: monospace;
   font-weight: bold;
@@ -185,7 +185,7 @@ body {
   }
   .menu,
   .grid-section,
-  .copy {
+  .copyright {
     grid-column: 1;
   }
   .grid-section {
